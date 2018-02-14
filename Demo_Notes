@@ -1,0 +1,29 @@
+AMOS DEMO
+
+Links:
+AMOS Console: https://master002.amosdemo.io:8443/console/
+
+cd IdeaProjects/amos_demo_scripts/
+sh amos_demo_create_projects.sh
+If errors that they already exist, open in Intelij and alter the project names
+
+Pre-running pipeline script
+1) Show authentication through the logs after clicking on the web link from the openshift console for Jenkins.
+2) Select auto refresh in the top right hand corner of the Jenkins dashboard
+
+To run Jenkins Pipeline script. - Show Jenkins Dashboard and terminal at the same time:
+sh amos_demo_jenkins_pipelines.sh
+
+After a moment Jenkins will show Ci/ CD project pop up and on the left hand side you'll see the pipeline building
+Switch to OpenShift, go to CI/ CD project and click on builds->pipeline and you can see the pipeline building.
+Fill time as this can take 5-6 minutes! 
+Downloading from Mavern Central
+Next you get to proceed the Jenkins build as it requires input. 
+This can link into any governance system a client may have using the API
+In this case we have 5 minutes before it will time out and fail.
+Split the screen - see recording from ~34 minutes.
+
+Show the Prometeoweb log in page on both dev and test
+
+Now set up the web hook
+sh get_webhook.sh
